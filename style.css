@@ -1,0 +1,761 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Trade+Winds&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+font-family: 'poppins', sans-serif,'Cookie',cursive;
+min-height: 100vh;
+}
+
+.container{
+    max-width: 2500px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: 
+        linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(IMAGENES/PORTADA.png);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 70vh;
+        display: flex;
+        align-items:center;
+        justify-content:space-between;
+        height: 700px;
+      
+    
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+
+}
+.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #D0A933;
+    font-family: "Trade Winds", system-ui;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.logo img{
+    height: 90px;
+}
+
+
+.menu .navbar ul li{
+    z-index: 20;
+    float: left;
+
+}
+
+.menu .navbar ul li a {
+font-size: 18px;
+padding: 20px;
+color: #f9bb9d;
+display: block;
+font-weight: bold;
+
+}
+
+.menu .navbar ul li a:hover{
+    color: #ce967b;
+}
+
+#menu{
+display: none;
+}
+
+.menu-container{
+    position: relative;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+
+}
+.submenu{
+    position: relative;
+}
+
+.submenu img{
+    width: 40px;
+}
+
+.submenu a{
+    color: #f9fafc;
+    display: flex;
+}
+
+.submenu #vaciar-carrito{
+ padding: 15px;
+ cursor: pointer;
+}
+
+.submenu #comprar{
+  padding: 15px;
+  cursor: pointer;
+}
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4b4e5076;
+    padding: 20px;
+    min-width: 400px;
+
+}
+
+table{
+    width: 100%;
+}
+
+th, td{
+    color: #ffffff;
+}
+
+.borrar{
+    background-color: #000000;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    cursor: pointer;
+
+}
+.header-content{
+    text-align: center;  
+}
+
+.header-content h1{
+font-size: 100px;
+line-height: 80px;
+color: #f9fafc;
+margin-bottom: 15px;
+padding: 0 0 20px 0;
+font-family: "Trade Winds", system-ui;
+}
+
+.header-content p{
+    font-size: 20px;
+    color: #c5c5c5;
+    padding: 30px 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #ce967b;
+    color: #f9fafc;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    
+}
+
+.btn-1:hover{
+    background-color:#edaf91
+}
+
+#lista-1{
+    background-color: #C1B19F;
+}
+.products{
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.products h2{
+    color:#34271E ;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-weight:900;
+}
+
+.product-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.product{
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background-color: #34271E;
+}
+
+.product img{
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.product h3{
+    font-size: 20px;
+    color: #D0A933;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.product p, .precio{
+    font-size: 16px;
+    color: #D0A933;
+    margin-bottom: 15px;
+}
+
+.precio{
+    font-weight: 800;
+}
+
+.product a{
+    font-size: 16px;
+    background-color: #C1B19F;
+    color: #34271E;
+    border-radius: 50px;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+.Quienes-somos {
+    padding:0;
+    background-color: #34271E;
+   
+   
+}
+.Quienes-somos p{
+    display: block;
+    font-size: 16px;
+    color: #f0f0f0;
+    text-shadow: -2px -2px 0 black;
+    padding: 0 250px;
+    text-transform: uppercase;
+ 
+}
+
+.Quienes-somos h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: -2px -2px 0 black;
+    font-size: 60px;
+    color: #f6f3ef;
+    height: 300px;
+
+}
+
+
+.Cerveza-content{
+    text-align: center;
+    padding: 15px;
+}
+
+
+.Cerveza-quienes{
+    background-image: 
+    url(IMAGENES/PROBA.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 450px;
+}
+.Cerveza-quienes{
+    display: block ;
+    text-align: center;
+}
+
+
+.Cerveza {
+    background-image: 
+    url(IMAGENES/FONDO.png);
+    background-position: center bottom;
+    background-repeat:repeat;
+    background-size:contain;
+    min-height: 70vh;
+   
+}
+.cerveza-1{
+    display:block;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.Cerveza h3{
+    color: #D0A933 ;
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.Cerveza img{
+    width: 500px;
+}
+
+
+.services{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(IMAGENES/SERVICIOS.jpeg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 25px 0;
+}
+
+.services-content{
+    text-align:center;
+    
+}
+
+.services-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color:#f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.services-content p{
+    font-size: 20px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.services-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+.services-1{
+    padding: 0 100px;
+
+}
+
+.services-1 img{
+    width: 200px;
+    margin: 0 15px;
+    margin-bottom: 15px;
+}
+
+.services-1 h3{
+    display: flex;
+    justify-content: space-between;
+    color: #C1B19F;
+    font-size: 25px;
+}
+
+.general{
+    display: flex;
+    background-color: #C1B19F;
+}
+
+.general-1{
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #e1e2e6;
+}
+
+.general-2{
+    background-image: url(IMAGENES/BRINDISDOS.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general-3{
+    background-image: url(IMAGENES/SONIDO\ CERVEZA.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.general p{
+    font-size: 16px;
+    color:#414247;
+    margin: 25px 0 45px 0;
+}
+
+.blog{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.blog-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-1{
+    padding: 15px 55px;
+}
+
+.blog-1 img{
+    width: 250px;
+    margin: 0 15PX;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.blog-1 h3{
+    font-size: 25px;
+    color: #323337;
+}
+
+.Contacto{
+    background: linear-gradient(
+        50deg,
+        rgba(40,42,55,1) 50%,
+        rgba(40,42,55,0.7)),
+        url(IMAGENES/BRINDIS\ CERVEZA.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding: 50px;
+     border-radius: 25px;
+
+}
+
+.contacto-form h2{
+    color: #c5c5c5;
+    margin-bottom: 15px;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contacto-form p{
+    color: #c5c5c5;
+    font-size: 25px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 75%;
+}
+
+form label{
+    font-size: 17px;
+    color: #959aab;
+    margin-bottom: 10px;
+
+}
+
+form input, textarea{
+    width: 50%;
+    padding: 17px 14px;
+    background-color: #333646;
+    border: 0;
+    font-size: 15px;
+    color: #f4f6f9;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+:focus{
+    outline: 1px solid #D0A933;
+}
+
+form .btn{
+    background-color: #D0A933;
+    width: 150px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+form .btn:hover{
+    background-color: #cbd033;
+}
+
+.footer{
+    padding: 10px 10px;
+    background-color: #000000;
+   
+}
+.seguinos{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 12px;
+    color: #e1e2e6;
+    font-size: 25px;
+   
+}
+.redes{
+    padding: 50px 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 40px;  
+}
+.redes img{
+    width: 100px;
+    border-radius: 15px;
+}
+.copy{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 12px;
+    color: #e1e2e6;
+    font-size: 15px;
+    
+}
+
+
+
+@media (max-width:991px) {
+
+.body{
+    width: 100%;
+}
+    .menu{
+    padding: 30px;
+    height: 50px;
+}
+.menu label{
+    display: initial;
+}
+.menu .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #323337;
+    display: none;
+}
+.menu .navbar ul li{
+    width: 100%;
+}
+.menu .navbar ul li a{
+    color: #ffffff;
+}
+#menu:checked ~ .navbar{
+    display: initial;
+}
+.logo h3{
+    font-size: 10px;
+}
+.logo img{
+    height: 70px;
+}
+
+
+.submenu:hover #carrito{
+    min-width: 100%;
+}
+.header{
+    min-height: 0vh;
+}
+.header-content{
+    padding: 100px 30px;
+}
+.header-content p{
+    padding: 0;
+    font-size: 14px;
+}
+.header-content h1{
+    padding: 100px 0 10px 0;
+   font-size: 55px;
+}
+.Quienes-somos{
+    padding: 10px;
+    height: 570px;
+    
+}
+.Quienes-somos h2{
+    padding: 0;
+    font-size: 40px;
+
+}
+.Quienes-somos p{
+    padding:0;
+    font-size: 18px;
+    
+}
+.Cerveza-quienes{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    min-height: 50vh;
+    align-items: center;
+}
+.products{
+    padding: 0 30px 30px 30px;
+}
+.products h2{
+    margin-bottom: 30px;
+}
+.product-content{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+.product img{
+width: 200px;
+}
+
+.Cerveza{
+    padding: 10px;
+}
+.Cerveza-content{
+    padding: 0;
+}
+.txt-p{
+    padding: 0;
+}
+.Cerveza h2{
+    padding: 0;
+}
+.Cerveza p{
+    padding: 0;
+}
+.Cerveza-group{
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.Cerveza-img{
+    display: none;
+}
+.cerveza-1{
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.cerveza-1 img{
+    width: 300px;
+}
+
+.services{
+    padding: 30px;
+}
+.services-content h2{
+    padding: 0;
+    font-size: 45px;
+}
+.services-content p{
+    padding: 0;
+}
+.services-group{
+    flex-direction: column;
+    margin-bottom: 0;
+    align-items: center;
+}
+.services-1{
+    margin-bottom: 25px;
+    align-items: center;
+}
+.general{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.general-1{
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+.general-2, .general-3{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 450px;
+}
+.blog{
+    padding: 10px;
+}
+.blog-content{
+    flex-direction: column;
+}
+.blog-1{
+    padding: 10px;
+}
+.Contacto{
+    padding: 30px;
+}
+.contacto-form{
+    width: 100%;
+}
+form{
+    width: 100%;
+}
+form input, textarea{
+    width: 75%;
+}
+.footer{
+    padding: 5PX;
+}
+
+.seguinos{
+    padding: 0 0 10PX 0 ;
+    font-size: 12px;
+   
+}
+.redes{
+    padding:0 60px;
+ 
+}
+.redes img{
+    width: 60px;
+}
+
+
+}
