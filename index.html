@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,19 +15,19 @@
 
     
     <a href="#" class="logo">
-        <img src="IMAGENES/LOGOSINFONDO.png" alt="logo reencuentro">
+        <img src="IMAGENES/LOGOSINFONDO.png" alt="logo de Cerveza Reencuentro">
         <h3>Reencuentro</h3>
     
     </a>
-    <input type="checkbox" id="menu" />
+    <input type="checkbox" id="menu">
      <label for="menu">
 
-        <img src="IMAGENES/menu.png" class="menu-icono" alt="boton despliegue de menu">
+        <img src="IMAGENES/menu.png" id= "hamburguesa" class="menu-icono" alt="boton despliegue de menu">
      </label>
      <nav class="navbar">
         <ul>
             <li><a href="#Inicio">Inicio</a></li>
-            <li><a href="#Quienes Somos">Sobre Nosotros</a></li>
+            <li><a href="#QuienesSomos">Sobre Nosotros</a></li>
             <li><a href="#lista-1">Productos</a></li>
             <li><a href="#Servicios">Servicios</a></li>
             <li><a href="#Noticias">Noticias</a></li>
@@ -53,8 +53,9 @@
 
                     </table>
                     <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a>
-                    <a href="https://formsubmit.co/sedago_088@hotmail.com" method="POST" id="comprar" class="btn-2">Comprar</a>
-
+                    <form action="https://formsubmit.co/sedago_088@hotmail.com" method="POST">
+                        <input type="submit" value="comprar" class="btn-2" id="comprar">
+                    </form>
                 </div>
 
             </li>
@@ -69,18 +70,17 @@
     <p> Disfrutá de nuestra cerveza artesanal, fruto del "REENCUENTRO" 
         su nombre surge de revalorar aquello que le da sentido a nuestras vidas y muchas veces olvidamos... reencontrarte con alguien especial, con amigos, con vos mismo... 
         Hacela tuya y reencontrá aquello que perdiste o aún no descubriste, sé parte de esta historia que comienza hoy y viene a dejar huella en vos.
-        CERVEZA ARTESANAL REENCUENTRO.
         </p>
 
 
 </div>
     </header>
 
-    <section class="Quienes-somos" id="Quienes Somos">
+    <section class="Quienes-somos" id="QuienesSomos">
 
 
         <div class="Cerveza-content container">
-           <div class="Cerveza-quienes">
+        
             <h2> SOMOS REENCUENTRO</h2>
 
             <p class="txt-p">
@@ -88,7 +88,7 @@
               y tomamos conciencia del valor de la amistad y de lo bien que la pasamos juntos,
                de allí el nombre de este proyecto...
             </p>
-        </div>
+        
     </div>
     </section>
     <main class="products container" id="lista-1">
@@ -98,10 +98,10 @@
 
             <div class="product">
                 <img src="IMAGENES/GOLDEN.png" alt="cerveza golden">
-                <div class="product-txt">
+                <div class="product-txt" name=" golden">
                     <h3>GOLDEN</h3>
                     <p>Es una Cerveza ligera y con una agradable mezcla de dulzor y amargor</p>
-                    <p class="precio">$3000</p>
+                    <p class="precio">$3500</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
 
                 </div>
@@ -110,22 +110,22 @@
             
             <div class="product">
                 <img src="IMAGENES/SCOTTISH.png" alt="cerveza scottish">
-                <div class="product-txt">
+                <div class="product-txt" name="scottish">
                     <h3>SCOTTISH</h3>
                     <p>Esta cerveza se distingue por su aroma y sabores frutales, aunque también pueden sentirse algunas notas a grano tostado.</p>
-                    <p class="precio">$3000</p>
+                    <p class="precio">$3500</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
 
                 </div>
 
             </div>
             
-            <div class="product">
+            <div class="product" name="stout">
                 <img src="IMAGENES/STOUT.png" alt="cerveza stout">
                 <div class="product-txt">
                     <h3>STOUT</h3>
                     <p>Cerveza con un aroma y un sabor más profundo que se asemeja con el café, el caramelo y con el chocolate.</p>
-                    <p class="precio">$3000</p>
+                    <p class="precio">$3500</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
 
                 </div>
@@ -163,7 +163,7 @@
         </div>
         <p>Para realizar consultas y solicitud de presupuestos contáctanos mediante el siguiente botón.
         </p>
-            <a href="https://w.app/CervezaReencuentro" target="_blank" class="btn-1"> CONSULTAR</a>
+            <a href="https://wa.me/5493562565234" target="_blank" class="btn-1"> CONSULTAR</a>
     </div>
 
 
@@ -206,24 +206,24 @@
         <p>Los integrantes de Reencuentro nos dejan su opinión.</p>
         <div class="blog-content">
             <div class="blog-1">
-                <img src="IMAGENES/MARIANA.jpg" alt="foto de Mariana">
+                <img src="IMAGENES/MAR.png" alt="foto de Mariana">
                 <h3>MARIANA GUTIERREZ</h3>
                 <p> Para mí la cerveza significa juntarse con amigos y pasarla bien!
                     </p>
             </div>
             <div class="blog-1">
-                <img src="IMAGENES/DIEGO.jpg" alt="foto de Diego">
+                <img src="IMAGENES/DIEG.png" alt="foto de Diego">
                 <h3>DIEGO BELTRAMO</h3>
                 <p> La cerveza representa el disfrute de la buena compañía y el buen sabor.
                     </p>
             </div>
             <div class="blog-1">
-                <img src="IMAGENES/JOSE.jpg" alt="foto de Jose">
+                <img src="IMAGENES/JOS.png" alt="foto de Jose">
                 <h3>JOSE GONZALEZ</h3>
-                <p> La cerveza es la bebida que prefiero para cuando recibo visitas en casa ya que a la mayoría les gusta.
-                                        </p>
+                <p> La cerveza es la bebida que prefiero porque es liviana y refrescante.  </p>
             </div>
         </div>
+
         <a href="https://www.instagram.com/direct/inbox/" class="btn-1"> DEJAR MI OPINIÓN</a>
     </section>
 
@@ -253,12 +253,11 @@
                     <input type="hidden" name="_captcha" value="false">
                 </form>
 
-    </div>
     </section>
 
     <footer class="footer">
         <div class="seguinos">
-        <H3>SEGUINOS Y ENTERATE DE TODAS LAS NOVEDADES</H3>
+        <h3>SEGUINOS Y ENTERATE DE TODAS LAS NOVEDADES</h3>
     </div>
       <div class="redes">
     <a href="https://www.facebook.com/profile.php?id=61556319034979" target="_blank">
@@ -267,7 +266,7 @@
       <a href="https://www.instagram.com/cerveza_reencuentro/" target="_blank">
         <img src="IMAGENES/IG.png" alt="logo instagram">
       </a>
-      <a href="https://w.app/CervezaReencuentro" target="_blank">
+      <a href="https://wa.me/5493562565234" target="_blank">
         <img src="IMAGENES/WPP.png" alt="logo whatsapp">
       </a>
     </div>
