@@ -91,11 +91,12 @@ function comprar(){ // Se decalra la funcion del boton comprar
 
 
 // Cerrar el menú al hacer clic en cualquier sección dentro de la clase "navbar"
-const seccionesNavbar = document.querySelectorAll('.navbar a');  // Selecciona todos los enlaces dentro de .navbar
 
-seccionesNavbar.forEach(function(seccion) {
-    seccion.addEventListener('click', function() {
-        const menu = document.getElementById('menu');
-        menu.style.display = 'none';  // Cierra el menú al hacer clic en cualquier enlace de la navbar
-    });
+const seccionesNavbar = document.querySelectorAll('.navbar a');// creo la constante que contiene todas las opciones del navbar
+
+seccionesNavbar.forEach(item => {// reccorre todas la opciones del navabar
+  item.addEventListener('click', () => {// si escucha algun evento click entonces...
+    const menuCheckbox = document.getElementById('menu');// deselecciona el checkbox que muestra el menu
+    menuCheckbox.checked = false;
+  });
 });
