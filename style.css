@@ -94,7 +94,7 @@ display: block;
 
 
 .menuContainer{
-    position: relative;
+    position: fixed;
     max-width: 100%;
     overflow-x: hidden;
 }
