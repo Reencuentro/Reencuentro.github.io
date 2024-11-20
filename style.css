@@ -21,6 +21,7 @@ img{
 body{
 font-family: 'Poppins', sans-serif, 'Cookie', cursive;
 min-height: 100vh;
+overflow-x: hidden;
 }
 
 .container{
@@ -92,8 +93,10 @@ display: block;
 
 
 
-.menu-container{
+.menuContainer{
     position: relative;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .menu-icono {
@@ -357,6 +360,8 @@ font-family: "Trade Winds", system-ui;
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -582,12 +587,13 @@ form .btn:hover{
 
 
 
-@media (max-width:995px) {
+@media (max-width:991px) {
 
 .body{
     width: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
     .menu{
     padding: 30px;
